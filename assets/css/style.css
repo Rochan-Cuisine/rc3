@@ -24,12 +24,7 @@ a:hover {
   text-decoration: none;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   font-family: "Playfair Display", serif;
 }
 
@@ -66,7 +61,6 @@ h6 {
   0% {
     transform: rotate(0deg);
   }
-
   100% {
     transform: rotate(360deg);
   }
@@ -76,7 +70,6 @@ h6 {
   0% {
     transform: rotate(0deg);
   }
-
   100% {
     transform: rotate(360deg);
   }
@@ -137,7 +130,11 @@ h6 {
   transition: all 0.5s;
   z-index: 996;
 }
-
+@media (max-width: 768px) {
+  #topbar {
+    font-size: 9px;
+  }
+}
 #topbar.topbar-scrolled {
   top: -40px;
 }
@@ -149,7 +146,7 @@ h6 {
 
 #topbar .contact-info i span {
   padding-left: 5px;
-  color: #050505;
+  color: #fff;
 }
 
 #topbar .languages ul {
@@ -158,18 +155,18 @@ h6 {
   list-style: none;
   padding: 0;
   margin: 0;
-  color: #ff0000;
+  color: #cda45e;
 }
 
 #topbar .languages ul a {
   color: white;
 }
 
-#topbar .languages ul li+li {
+#topbar .languages ul li + li {
   padding-left: 10px;
 }
 
-#topbar .languages ul li+li::before {
+#topbar .languages ul li + li::before {
   display: inline-block;
   padding-right: 10px;
   color: rgba(255, 255, 255, 0.5);
@@ -280,9 +277,7 @@ h6 {
   margin-left: 5px;
 }
 
-.navbar a:hover,
-.navbar .active,
-.navbar li:hover>a {
+.navbar a:hover, .navbar .active, .navbar li:hover > a {
   color: #d9ba85;
 }
 
@@ -315,13 +310,11 @@ h6 {
   font-size: 12px;
 }
 
-.navbar .dropdown ul a:hover,
-.navbar .dropdown ul .active:hover,
-.navbar .dropdown ul li:hover>a {
+.navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover > a {
   color: #cda45e;
 }
 
-.navbar .dropdown:hover>ul {
+.navbar .dropdown:hover > ul {
   opacity: 1;
   top: 100%;
   visibility: visible;
@@ -333,7 +326,7 @@ h6 {
   visibility: hidden;
 }
 
-.navbar .dropdown .dropdown:hover>ul {
+.navbar .dropdown .dropdown:hover > ul {
   opacity: 1;
   top: 0;
   left: 100%;
@@ -344,8 +337,7 @@ h6 {
   .navbar .dropdown .dropdown ul {
     left: -90%;
   }
-
-  .navbar .dropdown .dropdown:hover>ul {
+  .navbar .dropdown .dropdown:hover > ul {
     left: -100%;
   }
 }
@@ -366,7 +358,6 @@ h6 {
   .mobile-nav-toggle {
     display: block;
   }
-
   .navbar ul {
     display: none;
   }
@@ -410,9 +401,7 @@ h6 {
   color: #1a1814;
 }
 
-.navbar-mobile a:hover,
-.navbar-mobile .active,
-.navbar-mobile li:hover>a {
+.navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
   color: #cda45e;
 }
 
@@ -444,13 +433,11 @@ h6 {
   font-size: 12px;
 }
 
-.navbar-mobile .dropdown ul a:hover,
-.navbar-mobile .dropdown ul .active:hover,
-.navbar-mobile .dropdown ul li:hover>a {
+.navbar-mobile .dropdown ul a:hover, .navbar-mobile .dropdown ul .active:hover, .navbar-mobile .dropdown ul li:hover > a {
   color: #cda45e;
 }
 
-.navbar-mobile .dropdown>.dropdown-active {
+.navbar-mobile .dropdown > .dropdown-active {
   display: block;
 }
 
@@ -462,22 +449,23 @@ h6 {
   height: 100vh;
   background: url("../img/CreamIllustrativeHealthyFoodRecipesYouTubeIntroVideo1-ezgif.com-video-to-gif-converter.gif") top center;
   background-size: cover;
+  background-repeat: no-repeat;
   position: relative;
   padding: 0;
 }
-
 @media (max-width: 480px) {
   #hero {
     height: 40vh;
-    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
     padding: 10px;
   }
 }
-
+}
 #hero:before {
   content: "";
-
+  
   position: absolute;
   bottom: 0;
   top: 0;
@@ -505,7 +493,7 @@ h6 {
 }
 
 #hero h1 span {
-  color: #e79200;
+  color: #cda45e;
 }
 
 #hero h2 {
@@ -518,8 +506,7 @@ h6 {
   margin-top: 30px;
 }
 
-#hero .btn-menu,
-#hero .btn-book {
+#hero .btn-menu, #hero .btn-book {
   font-weight: 600;
   font-size: 13px;
   letter-spacing: 0.5px;
@@ -533,8 +520,7 @@ h6 {
   border: 2px solid #cda45e;
 }
 
-#hero .btn-menu:hover,
-#hero .btn-book:hover {
+#hero .btn-menu:hover, #hero .btn-book:hover {
   background: #cda45e;
   color: #fff;
 }
@@ -630,7 +616,6 @@ h6 {
   #hero {
     height: auto;
   }
-
   #hero .container {
     padding-top: 130px;
     padding-bottom: 60px;
@@ -642,7 +627,6 @@ h6 {
     font-size: 28px;
     line-height: 36px;
   }
-
   #hero h2 {
     font-size: 18px;
     line-height: 24px;
@@ -654,7 +638,6 @@ h6 {
     transform: scale(0.6, 0.6);
     opacity: 1;
   }
-
   100% {
     transform: scale(1, 1);
     opacity: 0;
@@ -666,7 +649,6 @@ h6 {
     transform: scale(0.6, 0.6);
     opacity: 1;
   }
-
   100% {
     transform: scale(1, 1);
     opacity: 0;
@@ -748,11 +730,11 @@ section {
   font-size: 14px;
 }
 
-.breadcrumbs ol li+li {
+.breadcrumbs ol li + li {
   padding-left: 10px;
 }
 
-.breadcrumbs ol li+li::before {
+.breadcrumbs ol li + li::before {
   display: inline-block;
   padding-right: 10px;
   color: #37332a;
@@ -763,11 +745,9 @@ section {
   .breadcrumbs .d-flex {
     display: block !important;
   }
-
   .breadcrumbs ol {
     display: block;
   }
-
   .breadcrumbs ol li {
     display: inline-block;
   }
@@ -777,7 +757,7 @@ section {
 # About
 --------------------------------------------------------------*/
 .about {
-  background: url("../img/gff1212.gif") center center;
+  background: url("../img/about-bg.jpg") center center;
   background-size: cover;
   position: relative;
   padding: 80px 0;
@@ -812,8 +792,8 @@ section {
   height: 60px;
   z-index: 1;
   content: '';
-  border-left: 5px solid #cda45e;
-  border-top: 5px solid #cda45e;
+  border-left: 5px solid #040403;
+  border-top: 5px solid #000000;
   transition: .5s;
 }
 
@@ -825,8 +805,8 @@ section {
   height: 60px;
   z-index: 2;
   content: '';
-  border-right: 5px solid #cda45e;
-  border-bottom: 5px solid #cda45e;
+  border-right: 5px solid #080706;
+  border-bottom: 5px solid #000000;
   transition: .5s;
 }
 
@@ -912,9 +892,7 @@ section {
   box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
 }
 
-.why-us .box:hover span,
-.why-us .box:hover h4,
-.why-us .box:hover p {
+.why-us .box:hover span, .why-us .box:hover h4, .why-us .box:hover p {
   color: #fff;
 }
 
@@ -943,8 +921,7 @@ section {
   font-family: "Playfair Display", serif;
 }
 
-.menu #menu-flters li:hover,
-.menu #menu-flters li.filter-active {
+.menu #menu-flters li:hover, .menu #menu-flters li.filter-active {
   color: #cda45e;
 }
 
@@ -973,8 +950,8 @@ section {
 
 .menu .menu-content::after {
   content: "......................................................................"
-    "...................................................................."
-    "....................................................................";
+ "...................................................................."
+ "....................................................................";
   position: absolute;
   left: 20px;
   right: 0;
@@ -1200,7 +1177,7 @@ section {
   font-weight: 600;
 }
 
-.book-a-table .php-email-form .error-message br+br {
+.book-a-table .php-email-form .error-message br + br {
   margin-top: 25px;
 }
 
@@ -1232,8 +1209,7 @@ section {
   animation: animate-loading 1s linear infinite;
 }
 
-.book-a-table .php-email-form input,
-.book-a-table .php-email-form textarea {
+.book-a-table .php-email-form input, .book-a-table .php-email-form textarea {
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
@@ -1242,23 +1218,19 @@ section {
   color: white;
 }
 
-.book-a-table .php-email-form input::-webkit-input-placeholder,
-.book-a-table .php-email-form textarea::-webkit-input-placeholder {
+.book-a-table .php-email-form input::-webkit-input-placeholder, .book-a-table .php-email-form textarea::-webkit-input-placeholder {
   color: #a49b89;
 }
 
-.book-a-table .php-email-form input::-moz-placeholder,
-.book-a-table .php-email-form textarea::-moz-placeholder {
+.book-a-table .php-email-form input::-moz-placeholder, .book-a-table .php-email-form textarea::-moz-placeholder {
   color: #a49b89;
 }
 
-.book-a-table .php-email-form input::placeholder,
-.book-a-table .php-email-form textarea::placeholder {
+.book-a-table .php-email-form input::placeholder, .book-a-table .php-email-form textarea::placeholder {
   color: #a49b89;
 }
 
-.book-a-table .php-email-form input:focus,
-.book-a-table .php-email-form textarea:focus {
+.book-a-table .php-email-form input:focus, .book-a-table .php-email-form textarea:focus {
   border-color: #cda45e;
 }
 
@@ -1313,8 +1285,7 @@ section {
   margin: 0 0 0 45px;
 }
 
-.testimonials .testimonial-item .quote-icon-left,
-.testimonials .testimonial-item .quote-icon-right {
+.testimonials .testimonial-item .quote-icon-left, .testimonials .testimonial-item .quote-icon-right {
   color: #d3af71;
   font-size: 26px;
 }
@@ -1496,9 +1467,7 @@ section {
   color: #bab3a6;
 }
 
-.contact .info .open-hours,
-.contact .info .email,
-.contact .info .phone {
+.contact .info .open-hours, .contact .info .email, .contact .info .phone {
   margin-top: 40px;
 }
 
@@ -1555,8 +1524,7 @@ section {
   animation: animate-loading 1s linear infinite;
 }
 
-.contact .php-email-form input,
-.contact .php-email-form textarea {
+.contact .php-email-form input, .contact .php-email-form textarea {
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
@@ -1565,23 +1533,19 @@ section {
   color: white;
 }
 
-.contact .php-email-form input::-webkit-input-placeholder,
-.contact .php-email-form textarea::-webkit-input-placeholder {
+.contact .php-email-form input::-webkit-input-placeholder, .contact .php-email-form textarea::-webkit-input-placeholder {
   color: #a49b89;
 }
 
-.contact .php-email-form input::-moz-placeholder,
-.contact .php-email-form textarea::-moz-placeholder {
+.contact .php-email-form input::-moz-placeholder, .contact .php-email-form textarea::-moz-placeholder {
   color: #a49b89;
 }
 
-.contact .php-email-form input::placeholder,
-.contact .php-email-form textarea::placeholder {
+.contact .php-email-form input::placeholder, .contact .php-email-form textarea::placeholder {
   color: #a49b89;
 }
 
-.contact .php-email-form input:focus,
-.contact .php-email-form textarea:focus {
+.contact .php-email-form input:focus, .contact .php-email-form textarea:focus {
   border-color: #cda45e;
 }
 
@@ -1610,7 +1574,6 @@ section {
   0% {
     transform: rotate(0deg);
   }
-
   100% {
     transform: rotate(360deg);
   }
@@ -1620,7 +1583,6 @@ section {
   0% {
     transform: rotate(0deg);
   }
-
   100% {
     transform: rotate(360deg);
   }

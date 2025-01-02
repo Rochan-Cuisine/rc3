@@ -1,6 +1,56 @@
 <html lang="en"><plasmo-csui></plasmo-csui>
 
-<head></head>
+<head>
+  <style>
+     .responsive-text {
+    font-size: 20px;
+    font-weight: bolder;
+    position: relative;
+    top: 20px;
+    left: 90px;
+    text-align: center;
+  }
+
+  /* Media query for mobile devices */
+  @media only screen and (max-width: 768px) {
+    .responsive-text {
+      font-size: 16px; /* Reduce font size for smaller screens */
+      left: 0; /* Remove left positioning */
+      top: 0;  /* Reset the vertical position */
+      padding: 0 10px; /* Add some padding for better readability */
+      text-align: center; /* Center-align the text */
+    }
+  }
+
+  /* Media query for extra small screens (like very small mobile screens) */
+  @media only screen and (max-width: 480px) {
+    .responsive-text {
+      font-size: 14px;
+      top: 35px; /* Further reduce font size */
+    }
+  }
+  .tpbr{
+    position: relative;
+    left: 400px;
+    bottom: 20px;
+
+  }
+  @media (max-width: 768px) {
+  .tpbr {
+    left: 20px;  /* Adjust left position for mobile */
+    bottom: 10px;  /* Adjust bottom position for mobile */
+  }
+}
+
+/* Optional: Additional styling for very small devices (like phones in portrait mode) */
+@media (max-width: 480px) {
+  .tpbr {
+    left: 10px;  /* Further adjustment if necessary */
+    bottom: 5px;  /* Further adjustment if necessary */
+  }
+}
+  </style>
+</head>
 
 <body data-new-gr-c-s-check-loaded="14.1215.0" data-gr-ext-installed="" data-aos-easing="ease-in-out"
   data-aos-duration="1000" data-aos-delay="0" cz-shortcut-listen="true"><plasmo-csui></plasmo-csui>
@@ -46,6 +96,9 @@
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
@@ -61,18 +114,7 @@
 
 
   <!-- ======= Top Bar ======= -->
-  <div id="topbar" class="d-flex align-items-center fixed-top topbar-scrolled">
-    <div class="container d-flex justify-content-center justify-content-md-between">
-
-      <div class="contact-info d-flex align-items-center">
-        <i style="font-weight: bolder;" class="bi bi-phone d-flex align-items-center"><span>8123472300</span></i>
-        <i style="font-weight: bolder;" class="bi bi-clock d-flex align-items-center ms-4"><span> Mon-Sat: 11AM -
-            2PM</span></i>
-      </div>
-
-
-    </div>
-  </div>
+  
 
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top d-flex align-items-cente header-scrolled">
@@ -125,7 +167,21 @@
         <div class="row">
           <div class="col-lg-6 order-1 order-lg-2 aos-init aos-animate" data-aos="zoom-in" data-aos-delay="100">
             <div class="about-img">
-              <img src="assets/img/ggg23-ezgif.com-video-to-gif-converter.gif" alt="">
+              <img src="assets/img/Brown And Beige Modern Indian Food Chicken Biryani Recipe YouTube Thumbnail.png" alt="">
+            </div>
+          </div>
+          <div  id="topbar" class="d-flex align-items-center fixed-top topbar-scrolled">
+            <div class="tpbr" class="container d-flex justify-content-center justify-content-md-between">
+        
+              <div  class="contact-info d-flex align-items-center">
+                <i style="font-weight: bolder;" class="bi bi-phone d-flex align-items-center"><span>+91 8123472300</span></i>
+                <i style="font-weight: bolder;" class="bi bi-clock d-flex align-items-center ms-4"><span> Sat & Sun: 10AM -
+                    10PM</span></i>
+                <i style="font-weight: bolder;" class="bi bi-clock d-flex align-items-center ms-4"><span> Mon - Fri: 8PM -
+                    10PM</span></i>
+              </div>
+        
+        
             </div>
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
@@ -200,6 +256,10 @@
           <p>Check Our Tasty Menu</p>
 
         </div>
+        <h2 style="font-size: 20px; position: relative; bottom: 40px;font-weight: bolder;">Ready to order? Click Here " <a href="https://wa.me/918123472300" target="_blank">
+          <i class="fab fa-whatsapp" style="font-size: 30px; color: #25D366;"></i> "
+        </a> 
+        </h2>
         <h2 style="font-size: 20px; position: relative; bottom: 45px;font-weight: bolder;">**Note: Prices may vary with
           delivery partners.
           Opt for pickup for
@@ -227,25 +287,24 @@
               <a href="#">MASALA CHICKEN KABAB</a><span>₹120</span>
             </div>
             <div class="menu-ingredients">
-              Marinated Chicken wi th Masala Spices
+              Marinated Chicken with Masala Spices
               (6-7 pieces)
 
             </div>
           </div>
 
-          <div class="col-lg-6 menu-item filter-specialty" style="position: absolute; left: 0px; top: 0px;">
-            <img src="assets/img/panneertika.jpg" class="menu-img" alt="">
+          <div class="col-lg-6 menu-item filter-starters" style="position: absolute; left: 0px; top: 0px;">
+            <img src="assets/img/frenchfries.jpg" class="menu-img" alt="">
             <div class="menu-content">
-              <a href="#">TANDOORI PANEER BITES
+              <a href="#">FRENCH FRIES AND SMILIES
               </a><span>₹100</span>
             </div>
             <div class="menu-ingredients">
-              Spiced, pan fried paneer cubes wi th smoky
-              masala flavors.
+              
             </div>
           </div>
 
-          <div class="col-lg-6 menu-item filter-starters"
+          <div class="col-lg-6 menu-item filter-salads"
             style="position: absolute; left: 660px; top: 0px; display: none;">
             <img src="assets/img/biriyanichkn.jpg" class="menu-img" alt="">
             <div class="menu-content">
@@ -257,49 +316,16 @@
             </div>
           </div>
 
-          <div class="col-lg-6 menu-item filter-salads"
-            style="position: absolute; left: 660px; top: 0px; display: none;">
-            <img src="assets/img/ghee-rice.jpg" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="#">GHEE RICE
-              </a><span>₹70</span>
-            </div>
-            <div class="menu-ingredients">
-              Made with homemade pure cow ghee
-
-            </div>
-          </div>
-
-          <div class="col-lg-6 menu-item filter-specialty" style="position: absolute; left: 660px; top: 0px;">
-            <img src="assets/img/veg-fried-rice-recipe.jpg" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="#">VEG FRIED RICE</a><span>₹50</span>
-            </div>
-            <div class="menu-ingredients">
-
-            </div>
-          </div>
-
-          <div class="col-lg-6 menu-item filter-starters"
-            style="position: absolute; left: 1320px; top: 0px; display: none;">
-            <img src="assets/img/eggrice.jpg" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="#">EGG FRIED RICE
-              </a><span>₹70</span>
-            </div>
-            <div class="menu-ingredients">
-
-            </div>
-          </div>
+          
 
           <div class="col-lg-6 menu-item filter-salads"
             style="position: absolute; left: 1320px; top: 0px; display: none;">
             <img src="assets/img/pongal.jpg" class="menu-img" alt="">
             <div class="menu-content">
-              <a href="#">PONGAL</a><span>₹70</span>
+              <a href="#">CREAMY GREEN SAUCE PASTA</a><span>₹120</span>
             </div>
             <div class="menu-ingredients">
-
+              Mint-based creamy, creamy sauce
             </div>
           </div>
 
@@ -337,7 +363,7 @@
           <div class="col-lg-6 menu-item filter-specialty" style="position: absolute; left: 0px; top: 250px;">
             <img src="assets/img/brownie.jpg" class="menu-img" alt="">
             <div class="menu-content">
-              <a href="#">RICH COCOA BROWNIE</a><span>₹50</span>
+              <a href="#">RICH COCOA BROWNIE</a><span>₹70</span>
             </div>
             <div class="menu-ingredients">
 
@@ -359,6 +385,17 @@
             <img src="assets/img/chcocop.jpg" class="menu-img" alt="">
             <div class="menu-content">
               <a href="#">CHOCO CHIP COOKIE</a><span>₹95
+              </span>
+            </div>
+            <div class="menu-ingredients">
+
+
+            </div>
+          </div>
+          <div class="col-lg-6 menu-item filter-specialty" style="position: absolute; left: 0px; top: 370px;">
+            <img src="assets/img/choconuts.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">CHOCO NUTS COOKIE</a><span>₹100
               </span>
             </div>
             <div class="menu-ingredients">
@@ -390,10 +427,12 @@
           </div>
 
         </div>
-        <h2 style="font-size: 20px; position: relative; top: 9px;font-weight: bolder;left: 200px;">**Make Your Taste
-          Buds
-          Dance!
-          Custom cakes & cookies. Pre-order via WhatsApp: 8123472300**
+        <h2 class="responsive-text">
+          **Make Your Taste Buds Dance! Custom cakes & cookies. Pre-order via <!-- WhatsApp Icon -->
+          <a href="https://wa.me/918123472300" target="_blank">
+            <i class="bi bi-whatsapp" style="font-size: 24px; color: #25D366;"></i>
+          </a>
+          : 8123472300**
         </h2>
       </div>
     </section><!-- End Menu Section -->
@@ -486,6 +525,10 @@
 
                 <a href="https://www.instagram.com/rochans_cuisine?igsh=ZnM2MHNlZm1jM3dk" class="instagram"><i
                     class="bx bxl-instagram"></i></a>
+                    <a href="https://wa.me/918123472300" target="_blank">
+                      <i class="bi bi-whatsapp" style="font-size: 22px; color: #25D366;"></i>
+                    </a>
+
 
 
               </div>
